@@ -121,3 +121,24 @@ th, td {
       font-size: small; /* Taille plus petite pour les écrans très petits */
     }
   }
+
+.btn {
+    background-color: #8A0000;
+    border: 1px solid black;
+    color: white;
+    border-radius: 5px;
+}
+
+.form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.form button {
+    background-color: #004D00;
+    border: 1px solid black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}

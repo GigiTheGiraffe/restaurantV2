@@ -33,8 +33,8 @@ include 'readImages.php';
                     <h2>Galerie</h2>
                 </a>
             </nav>
-            <div class="table-container">
-                <table class="switch" id="messages">
+            <div class="table-container switch" id="messages">
+                <table>
                     <thead>
                         <tr>
                             <th>Date</th>
@@ -66,8 +66,8 @@ include 'readImages.php';
                     </tbody>
                 </table>
             </div>
-            <div class="table-container">
-                <table class="switch" id="livreOr">
+            <div class="table-container switch" id="livreOr">
+                <table>
                     <thead>
                         <tr>
                             <th>Date</th>
@@ -101,33 +101,44 @@ include 'readImages.php';
                     </tbody>
                 </table>
             </div>
-            <div class="table-container">
+            <div class="table-container switch" id="galerie">
                 <section>
-                <table class="switch" id="galerie">
-                    <thead>
-                        <tr>
-                            <th>Nom</th>
-                            <th>Path</th>
-                            <th>Delete</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Contenu de la table initial -->
-                        <?php
-                        foreach ($resultGalery as $row) {
-                        ?>
+                    <form class="form" action="upload.php" method="post" enctype="multipart/form-data">
+                        <label for="image">Choisissez une image :</label>
+                        <input type="file" name="image" id="image" accept="image/*" required>
+                        <br><br>
+
+                        <label for="imageName">Nom de l'image :</label>
+                        <input type="text" name="imageName" id="imageName" required>
+                        <br><br>
+
+                        <button type="submit">Uploader l'image</button>
+                    </form>
+                    <table>
+                        <thead>
                             <tr>
-                                <td><?= $row['name'] ?></td>
-                                <td><?= $row['path'] ?></td>
-                                <td>
-                                    <form method="post"><button type="submit" name="deleteBtn" class="btn" value="<?= $row['name'] ?>">Supp</button></form>
-                                </td>
+                                <th>Nom</th>
+                                <th>Path</th>
+                                <th>Delete</th>
                             </tr>
-                        <?php
-                        }
-                        ?>
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            <!-- Contenu de la table initial -->
+                            <?php
+                            foreach ($resultGalery as $row) {
+                            ?>
+                                <tr>
+                                    <td><?= $row['name'] ?></td>
+                                    <td><?= $row['path'] ?></td>
+                                    <td>
+                                        <form method="post"><button type="submit" name="deleteBtn" class="btn" value="<?= $row['name'] ?>">Supp</button></form>
+                                    </td>
+                                </tr>
+                            <?php
+                            }
+                            ?>
+                        </tbody>
+                    </table>
                 </section>
             </div>
         </section>
