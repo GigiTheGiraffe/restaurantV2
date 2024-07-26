@@ -104,3 +104,10 @@ Voici les images de prototype créées par mon coach, Mike.
 |Back office |<img src="/assets/images/deletemessage.png" width="600" height="auto" />|
 | Livre d'Or |<img src="/assets/images/backofficeX2.png" width="600" height="auto" />|
 | Galerie |<img src="/assets/images/backofficeIMG.png" width="600" height="auto" />|
+
+Voici les images de mon backoffice, je n'ai pas encore eu le temps de rajouter les boutons pour ajouter une image mais le reste fonctionne. 
+| Note | Image |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|Back office |<img src="/assets/images/messages.png" width="600" height="auto" />|
+| Livre d'Or |<img src="/assets/images/livreOr.png" width="600" height="auto" />|
+| Galerie |<img src="/assets/images/images.png" width="600" height="auto" />|
