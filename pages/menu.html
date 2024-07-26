@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu La Cantine</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="../css/styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a4b4ca04e3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-vanilla text-blue">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/logo.png" alt="Logo La Cantine" height="40" width="94.34">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-lg-end text-uppercase" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="galerie.html">Galerie</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="restaurant.html">Restaurant</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="contact.php">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="container-fluid mb-5">
+      <article class="row mt-3">
+        <h1 class="col-12 text-center fst-italic fw-bold my-4 text-decoration-underline">Menu</h1>
+        <ul class="list-group gap-2 px-4">
+          <li
+            class="list-group-item d-flex align-items-center flex-column text-center border-4 rounded border-danger bg-card m-1 mx-lg-auto col-lg-6">
+            <h2
+              class="list-group-item d-flex align-items-center flex-column list-group-item-warning text-blue fst-italic fw-bold">
+              Entrées fantastiques</h2>
+            <ul class="list-group">
+              <li
+                class="list-group-item list-group-item-warning d-flex justify-content-between fs-4 align-items-center text-blue">
+                <h3>Croquettes aux Crevettes Grises</h3><span class="badge bg-warning text-blue rounded-pill">15</span>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning d-flex flex-column text-blue accordion accordion-flush"
+                id="collapseCrevette">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button align-items-start collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseCrevette" aria-expanded="false" aria-controls="collapseCrevette">
+                      <h6 class="text-blue">Ingrédients</h6>
+                    </button>
+                  </h2>
+                  <div id="collapseCrevette" class="accordion-collapse collapse">
+                    <div class="accordion-body bg-warning-subtle text-blue">
+                      <p>crevettes grises, beurre, farine, lait, œuf, chapelure</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic">
+                <p>Des croquettes croustillantes fourrées avec des crevettes grises, une spécialité de la
+                  côte belge.</p>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+                <h3>Pâté de Campagne</h3><span class="badge bg-warning text-blue rounded-pill">10</span>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning d-flex flex-column text-blue accordion accordion-flush"
+                id="collapsePaté">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapsePaté" aria-expanded="false" aria-controls="collapsePaté">
+                      <h6 class="text-blue">Ingrédients</h6>
+                    </button>
+                  </h2>
+                  <div id="collapsePaté" class="accordion-collapse collapse">
+                    <div class="accordion-body bg-warning-subtle text-blue">
+                      <p>porc haché, foie de porc, oignon, ail, œuf, cognac, pain de campagne</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic">
+                <p>Un pâté traditionnel fait de porc, servi avec du pain de campagne et des cornichons.</p>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+                <h3>Salade Liégeoise</h3><span class="badge bg-warning text-blue rounded-pill">8</span>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning d-flex flex-column text-blue accordion accordion-flush"
+                id="collapseSalade">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSalade" aria-expanded="false" aria-controls="collapseSalade">
+                      <h6 class="text-blue">Ingrédients</h6>
+                    </button>
+                  </h2>
+                  <div id="collapseSalade" class="accordion-collapse collapse">
+                    <div class="accordion-body bg-warning-subtle text-blue">
+                      <p>haricots verts, pommes de terre, lardons, oignon, vinaigre de vin</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic">
+                <p>Salade chaude composée de haricots verts, de pommes de terre et de lardons,
+                  assaisonnée avec du vinaigre et des échalotes.</p>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="list-group-item d-flex align-items-center flex-column text-center border-4 rounded border-danger bg-card m-1 mx-lg-auto col-lg-6">
+            <h2
+              class="list-group-item d-flex align-items-center flex-column list-group-item-warning text-blue fst-italic fw-bold">
+              Plats réchauffés au micro-ondes</h2>
+            <ul class="list-group">
+              <li
+                class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+                <h3>Waterzooi de Poulet</h3><span class="badge bg-warning text-blue rounded-pill">18</span>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning d-flex flex-column text-blue accordion accordion-flush"
+                id="collapseWaterzooi">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseWaterzooi" aria-expanded="false" aria-controls="collapseWaterzooi">
+                      <h6 class="text-blue">Ingrédients</h6>
+                    </button>
+                  </h2>
+                  <div id="collapseWaterzooi" class="accordion-collapse collapse">
+                    <div class="accordion-body bg-warning-subtle text-blue">
+                      <p>poulet, poireaux, carottes, céleri, pommes de terre, bouillon de volaille, crème fraîche</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic px-4 px-md-0">
+                <p>Un ragoût crémeux de poulet avec des légumes (poireaux, carottes, céleri) et des pommes
+                  de terre, servi avec du pain.</p>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+                <h3>Carbonade Flamande</h3><span class="badge bg-warning text-blue rounded-pill">20</span>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning d-flex flex-column text-blue accordion accordion-flush"
+                id="collapseCarbonade">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseCarbonade" aria-expanded="false" aria-controls="collapseCarbonade">
+                      <h6 class="text-blue">Ingrédients</h6>
+                    </button>
+                  </h2>
+                  <div id="collapseCarbonade" class="accordion-collapse collapse">
+                    <div class="accordion-body bg-warning-subtle text-blue">
+                      <p>bœuf, oignons, bière belge, pain d'épices, moutarde, frites</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic">
+                <p>Un ragoût de bœuf mijoté à la bière belge, avec des oignons et du pain d’épices, servi
+                  avec des frites.</p>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+                <h3>Moules-Frites</h3><span class="badge bg-warning text-blue rounded-pill">15</span>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning d-flex flex-column text-blue accordion accordion-flush"
+                id="collapseMoules">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseMoules" aria-expanded="false" aria-controls="collapseMoules">
+                      <h6 class="text-blue">Ingrédients</h6>
+                    </button>
+                  </h2>
+                  <div id="collapseMoules" class="accordion-collapse collapse">
+                    <div class="accordion-body bg-warning-subtle text-blue">
+                      <p>moules, oignon, ail, vin blanc, beurre, persil, frites</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic">
+                <p>Des moules cuites au vin blanc, à l'ail, et aux herbes, servies avec des frites
+                  croustillantes.</p>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+                <h3>Chicons au Gratin</h3><span class="badge bg-warning text-blue rounded-pill">12</span>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning d-flex flex-column text-blue accordion accordion-flush"
+                id="collapseChicon">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseChicon" aria-expanded="false" aria-controls="collapseChicon">
+                      <h6 class="text-blue">Ingrédients</h6>
+                    </button>
+                  </h2>
+                  <div id="collapseChicon" class="accordion-collapse collapse">
+                    <div class="accordion-body bg-warning-subtle text-blue">
+                      <p>chicons, jambon, Gruyère, beurre, farine, lait</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic p-4">
+                <p>Endives enveloppées de jambon, nappées de sauce béchamel et gratinées au four avec
+                  du fromage.</p>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+                <h3>Filet Américain</h3><span class="badge bg-warning text-blue rounded-pill">12</span>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning d-flex flex-column text-blue accordion accordion-flush"
+                id="collapseAméricain">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseAméricain" aria-expanded="false" aria-controls="collapseAméricain">
+                      <h6 class="text-blue">Ingrédients</h6>
+                    </button>
+                  </h2>
+                  <div id="collapseAméricain" class="accordion-collapse collapse">
+                    <div class="accordion-body bg-warning-subtle text-blue">
+                      <p>bœuf haché cru, câpres, oignons, cornichons, jaunes d'œuf, pain</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic px-5 px-md-0">
+                <p>Du bœuf haché cru assaisonné avec des câpres, des oignons, des cornichons, des jaunes
+                  d'œuf et des herbes, servi avec du pain.</p>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="list-group-item d-flex align-items-center flex-column text-center border-4 rounded border-danger bg-card m-1 mx-lg-auto col-lg-6">
+            <h2
+              class="list-group-item d-flex align-items-center flex-column list-group-item-warning text-blue fst-italic fw-bold">
+              Desserts formidables</h2>
+            <ul class="list-group">
+              <li
+                class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+                <h3>Gaufres de Liège</h3><span class="badge bg-warning text-blue rounded-pill">5</span>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning d-flex flex-column text-blue accordion accordion-flush"
+                id="collapseGaufres">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseGaufres" aria-expanded="false" aria-controls="collapseGaufres">
+                      <h6 class="text-blue">Ingrédients</h6>
+                    </button>
+                  </h2>
+                  <div id="collapseGaufres" class="accordion-collapse collapse">
+                    <div class="accordion-body bg-warning-subtle text-blue">
+                      <p>farine, levure, sucre perlé, beurre, lait, œufs</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic">
+                <p>Des gaufres épaisses et caramélisées avec des perles de sucre à l’intérieur.</p>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+                <h3>Tarte au Riz</h3><span class="badge bg-warning text-blue rounded-pill">6</span>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning d-flex flex-column text-blue accordion accordion-flush"
+                id="collapseTarte">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTarte" aria-expanded="false" aria-controls="collapseTarte">
+                      <h6 class="text-blue">Ingrédients</h6>
+                    </button>
+                  </h2>
+                  <div id="collapseTarte" class="accordion-collapse collapse">
+                    <div class="accordion-body bg-warning-subtle text-blue">
+                      <p>pâte feuilletée, riz au lait, lait, sucre, œufs, vanille</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic p-4">
+                <p>Une tarte traditionnelle de la région de Verviers, composée d’une croûte de pâte
+                  feuilletée et d’une garniture de riz au lait.</p>
+              </li>
+              <li
+                class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+                <h3>Cubes de Sirop de Liège</h3><span class="badge bg-warning text-blue rounded-pill">4</span>
+              <li
+                class="list-group-item list-group-item-warning d-flex flex-column text-blue accordion accordion-flush"
+                id="collapseCubes">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-warning-subtle" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseCubes" aria-expanded="false" aria-controls="collapseCubes">
+                      <h6 class="text-blue">Ingrédients</h6>
+                    </button>
+                  </h2>
+                  <div id="collapseCubes" class="accordion-collapse collapse">
+                    <div class="accordion-body bg-warning-subtle text-blue">
+                      <p>sirop de Liège, sucre, gélatine</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+          </li>
+          <li
+            class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic">
+            <p>De petites douceurs faites à partir de sirop de Liège, un sirop épais et sucré à base de
+              poires et de pommes.</p>
+          </li>
+        </ul>
+        </li>
+        <li
+          class="list-group-item d-flex align-items-center flex-column text-center border-4 rounded border-danger mb-5 bg-card m-1 mx-lg-auto col-lg-6">
+          <h2
+            class="list-group-item d-flex align-items-center flex-column list-group-item-warning text-blue fst-italic fw-bold">
+            Boissons extraordinaires</h2>
+          <ul class="list-group">
+            <li
+              class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+              <h3>Bière Trappiste</h3><span class="badge bg-warning text-blue rounded-pill">4</span>
+            </li>
+            <li
+              class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic">
+              <p>Une bière brassée par les moines trappistes, comme la Chimay, la Rochefort ou la
+                Westvleteren.</p>
+            </li>
+            <li
+              class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+              <h3>Kriek</h3><span class="badge bg-warning text-blue rounded-pill">4</span>
+            </li>
+            <li
+              class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic">
+              <p>Une bière lambic à base de cerises, offrant un goût fruité et rafraîchissant.</p>
+            </li>
+            <li
+              class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+              <h3>Jenever</h3><span class="badge bg-warning text-blue rounded-pill">3</span>
+            </li>
+            <li
+              class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic">
+              <p>Une eau-de-vie de genièvre, traditionnellement dégustée en apéritif.</p>
+            </li>
+            <li
+              class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+              <h3>Pékèt</h3><span class="badge bg-warning text-blue rounded-pill">3</span>
+            </li>
+            <li
+              class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-blue mb-2 fst-italic">
+              <p>Une liqueur typique de Liège, à base de baies de genévrier.</p>
+            </li>
+            <li
+              class="list-group-item list-group-item-warning text-blue d-flex justify-content-between fs-4 align-items-center">
+              <h3>Sirop de Liège avec de l'eau pétillante</h3><span
+                class="badge bg-warning text-blue rounded-pill">2</span>
+            </li>
+            <li
+              class="list-group-item list-group-item-warning rounded-bottom-pill justify-content-between text-center text-blue mb-2 fst-italic">
+              <p>Un mélange de sirop de Liège et d'eau pétillante pour une boisson rafraîchissante et
+                sucrée.</p>
+            </li>
+          </ul>
+        </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer class="container-fluid pt-md-1 pt-2 pb-1 sticky-bottom">
+    <div class="row align-items-center justify-content-evenly">
+      <button type="button" class="col-3 btn" aria-label="Lien twitter"><a class="text-blue"
+          href="https://x.com/?lang=fr"><i class="fa-brands fa-twitter fa-2xl"></i></a></button>
+      <button type="button" class="col-3 btn" aria-label="Lien facebook"><a class="text-blue"
+          href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a></button>
+      <button type="button" class="col-3 btn" aria-label="Lien instagram"><a class="text-blue"
+          href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a></button>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn col-12 col-md-3 btn-lg btn-danger"
+        role="button">Commander</a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

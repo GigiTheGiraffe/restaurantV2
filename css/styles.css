@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Almarai';
+    src: url('font/Almarai-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarai';
+    src: url('font/Almarai-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarai';
+    src: url('font/Almarai-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarai';
+    src: url('font/Almarai-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+.bg-vanilla {
+    background-color: #EAE2B7;
+}
+
+.bg-red {
+    background-color: #CE2727;
+}
+
+.bg-card {
+    background-color: #FED686;
+}
+
+header, footer {
+    background-color: #FCBF49;
+}
+
+.text-blue {
+    color:#003049;
+}
+
+.text-important {
+    color:#5E1212;
+}
+
+body {
+    font-family: 'Almarai', Helvetica, sans-serif;
+}
+
+.jumbotron {
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+    background-color: #F77F00;
+    border-radius: .3rem;
+    word-break:keep-all;
+  }
+  .card {
+  width: 35rem;
+}
