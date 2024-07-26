@@ -1,3 +1,8 @@
+<?php
+include '../php/load-env.php';
+loadEnv(__DIR__ . '/../php/.env');
+include '../php/createGalery.php';
+?>
 <!doctype html>
 <html lang="fr">
 
@@ -28,7 +33,7 @@
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link active" aria-current="page" href="galerie.html">Galerie</a>
+              <a class="nav-link active" aria-current="page" href="galerie.php">Galerie</a>
             </li>
             <li class="nav-item mx-3">
               <a class="nav-link" href="restaurant.html">Restaurant</a>

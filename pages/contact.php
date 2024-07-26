@@ -1,6 +1,6 @@
 <?php
 include '../php/load-env.php';
-loadEnv(__DIR__ . '/../php/.env'); 
+loadEnv(__DIR__ . '/../php/.env');
 require '../php/form-validation.php';
 $messageErreur = "";
 ?>
@@ -32,7 +32,7 @@ $messageErreur = "";
                             <a class="nav-link" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="galerie.html">Galerie</a>
+                            <a class="nav-link" href="galerie.php">Galerie</a>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="restaurant.html">Restaurant</a>

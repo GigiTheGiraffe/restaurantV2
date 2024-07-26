@@ -18,6 +18,7 @@ $ch = curl_init($url);
 
 // Configurer les options de cURL
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+//  Header demandé par sheety
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
     'Content-Type: application/json',
 ]);
@@ -30,7 +31,7 @@ $response = curl_exec($ch);
 // Fermer cURL
 curl_close($ch);
 
-// Vérifier la réponse
+/*// Vérifier la réponse
 if ($response) {
     $responseData = json_decode($response, true);
     if (isset($responseData['sheet1'])) {
@@ -43,5 +44,5 @@ if ($response) {
 } else {
     // Debugging
     //echo 'Erreur lors de la requête.';
-}
+}*/
 ?>
