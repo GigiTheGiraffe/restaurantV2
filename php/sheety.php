@@ -19,9 +19,7 @@ $ch = curl_init($url);
 // Configurer les options de cURL
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 //  Header demandé par sheety
-curl_setopt($ch, CURLOPT_HTTPHEADER, [
-    'Content-Type: application/json',
-]);
+curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json',]);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 
