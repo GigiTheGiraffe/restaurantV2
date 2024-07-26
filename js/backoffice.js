@@ -1,4 +1,4 @@
-const tables = document.querySelectorAll('table');
+const tables = document.querySelectorAll('.switch');
 const buttons = document.querySelectorAll('a');
 function showTable(tableId) {
   // Cache toutes les tables

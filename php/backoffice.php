@@ -3,6 +3,7 @@ include 'load-env.php';
 loadEnv(__DIR__ . './.env');
 include 'read-message.php';
 include 'delete.php';
+include 'readImages.php';
 ?>
 <!doctype html>
 <html lang="fr">
@@ -33,7 +34,7 @@ include 'delete.php';
                 </a>
             </nav>
             <div class="table-container">
-                <table id="messages">
+                <table class="switch" id="messages">
                     <thead>
                         <tr>
                             <th>Date</th>
@@ -66,7 +67,7 @@ include 'delete.php';
                 </table>
             </div>
             <div class="table-container">
-                <table id="livreOr">
+                <table class="switch" id="livreOr">
                     <thead>
                         <tr>
                             <th>Date</th>
@@ -101,28 +102,33 @@ include 'delete.php';
                 </table>
             </div>
             <div class="table-container">
-                <table id="galerie">
+                <section>
+                <table class="switch" id="galerie">
                     <thead>
                         <tr>
-                            <th>Date</th>
-                            <th>Name</th>
-                            <th>Email</th>
+                            <th>Nom</th>
+                            <th>Path</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
                         <!-- Contenu de la table initial -->
-                        <tr>
-                            <td>Cellule 1.1</td>
-                            <td>Cellule 1.2</td>
-                            <td>Cellule 1.3</td>
-                        </tr>
-                        <tr>
-                            <td>Cellule 2.1</td>
-                            <td>Cellule 2.2</td>
-                            <td>Cellule 2.3</td>
-                        </tr>
+                        <?php
+                        foreach ($resultGalery as $row) {
+                        ?>
+                            <tr>
+                                <td><?= $row['name'] ?></td>
+                                <td><?= $row['path'] ?></td>
+                                <td>
+                                    <form method="post"><button type="submit" name="deleteBtn" class="btn" value="<?= $row['name'] ?>">Supp</button></form>
+                                </td>
+                            </tr>
+                        <?php
+                        }
+                        ?>
                     </tbody>
                 </table>
+                </section>
             </div>
         </section>
     </main>
