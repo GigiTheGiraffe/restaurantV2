@@ -4,6 +4,7 @@ loadEnv(__DIR__ . './.env');
 include 'read-message.php';
 include 'delete.php';
 include 'readImages.php';
+include 'upload.php';
 ?>
 <!doctype html>
 <html lang="fr">
@@ -103,9 +104,9 @@ include 'readImages.php';
             </div>
             <div class="table-container switch" id="galerie">
                 <section>
-                    <form class="form" action="upload.php" method="post" enctype="multipart/form-data">
-                        <label for="image">Choisissez une image :</label>
-                        <input type="file" name="image" id="image" accept="image/*" required>
+                    <form class="form" method="post" enctype="multipart/form-data">
+                        <label for="image">Choisissez une image de moins de 5Mo :</label>
+                        <input type="file" name="image" id="image" accept=".jpeg,.webp,.pdf,.png" required>
                         <br><br>
 
                         <label for="imageName">Nom de l'image :</label>
