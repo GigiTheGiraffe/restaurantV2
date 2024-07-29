@@ -108,15 +108,6 @@ include 'upload.php';
                         <label for="image">Choisissez une image de moins de 5Mo :</label>
                         <input type="file" name="image" id="image" accept=".jpeg,.webp,.pdf,.png" required>
                         <br>
-                        <?php
-                        if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['image'])) {
-                            if ($erreur) {
-                                echo $erreur;
-                            } else {
-                                echo $succes;
-                            }
-                        }
-                        ?>
                         <br>
                         <label for="imageName">Nom de l'image :</label>
                         <input type="text" name="imageName" id="imageName" required>
