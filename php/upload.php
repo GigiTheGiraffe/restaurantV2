@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 exit;
             }
             $conn = null;
-            // header("Location: " . $_SERVER['PHP_SELF']);
+            header("Location: " . $_SERVER['PHP_SELF']);
         } else {
             //$erreur = 'Erreur lors du téléchargement du fichier.';
             //echo $erreur;

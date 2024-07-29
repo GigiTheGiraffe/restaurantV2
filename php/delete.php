@@ -12,13 +12,23 @@ try {
         $stmt = $conn->prepare("DELETE FROM messages WHERE id = :id");
             // Liaison du parametre
         $stmt->bindParam(':id', $id);
+        $stmt->execute();
     } else {
-        $stmt = $conn->prepare("DELETE FROM images WHERE name = :name");
-            // Liaison du parametre
+        // Recuperation du path pour suppression de l'image sur le stockage du serveur
+        $stmt = $conn->prepare("SELECT path FROM images WHERE name = :name");
         $stmt->bindParam(':name', $id);
+        $stmt->execute();
+        $filePath = $stmt->fetchColumn();
+        $stmt = $conn->prepare("DELETE FROM images WHERE name = :name");
+        // Liaison du parametre
+        $stmt->bindParam(':name', $id);
+        $stmt->execute();
+        // Suppression sur le serveur
+        if ($filePath && file_exists($filePath)) {
+                unlink($filePath);
+        }
     }
     // Exécution de la requete
-    $stmt->execute();
     header("Location: " . $_SERVER['PHP_SELF']);
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
